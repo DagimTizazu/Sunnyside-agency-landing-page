@@ -33,4 +33,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+*.sketch
+*.fig
+
+*.xd
+
+.DS_Store
+.prettierignore
+
 # End of https://www.toptal.com/developers/gitignore/api/sass,windows
