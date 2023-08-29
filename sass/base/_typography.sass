@@ -12,6 +12,45 @@ h2
     text-transform: uppercase
     letter-spacing: 7px
     line-height: 40px
+    @media (min-width: 850px)
+        font-size: 2.2em
+    @media (min-width: 900px)
+        font-size: 2.5em
+    @media (min-width: 1000px)
+        font-size: 2.8em
+    @media (min-width: 1300px)
+        font-size: 3.2em
+
+.nav-items
+    a
+        text-decoration: none
+        font-size: .9rem
+        color: $grayish-blue
+        @media (min-width: 850px)
+            color: $white
+            font-size: 1.1rem
+            &:hover
+                color: $yellow
+
+#contact-item
+    background-color: $yellow
+    padding: 4px 20px 8px
+    border-radius: 20px
+    @media (min-width: 850px)
+        background-color: $white
+        padding: 12px 25px
+        border-radius: 30px
+        &:hover
+            background-color: transparentize($white, 0.7)
+            a
+                color: $white
+    a
+        color: $very-dark-desaturated-blue
+        font-family: $title-font
+        text-transform: uppercase
+        font-size: .8rem
+        @media (min-width: 850px)
+            font-size: 1rem
 
 .about-us-title
     font-size: 1.5rem
@@ -19,10 +58,26 @@ h2
     padding: 0 10px
     line-height: 1.2em
     color: $very-dark-desaturated-blue
+    margin-bottom: .8em
+    @media (min-width: 550px)
+        padding: 0
+    @media (min-width: 750px)
+        font-size: 1.6rem
+    @media (min-width: 1250px)
+        font-size: 2.2rem
+        margin-bottom: 1em
+    @media (min-width: 1350px)
+        margin-bottom: 1.3em
 
 .about-us-text
     font-size: 15px
-    color: $very-dark-grayish-blue
+    color: $dark-grayish-blue
+    margin-bottom: .8em
+    @media (min-width: 750px)
+        font-size: 16px
+    @media (min-width: 1250px)
+        font-size: 18px
+        margin-bottom: 1em
 
 .learn-more-red, .learn-more-yellow
     font-family: $title-font
@@ -31,46 +86,69 @@ h2
     text-decoration: none
     text-transform: uppercase
     color: $very-dark-desaturated-blue
+    padding: 0 4px
+    @media (min-width: 750px)
+        font-size: .9rem
+    @media (min-width: 1250px)
+        font-size: 1rem
 
 .learn-more-yellow
-    border-bottom: solid 4px $yellow
+    background: linear-gradient(to top, lighten($yellow, 30%) 20%, $white 40%)
+    &:hover
+        background: linear-gradient(to top, $yellow 20%, $white 40%)
 
 .learn-more-red
-    border-bottom: solid 4px $soft-red
+    background: linear-gradient(to top, lighten($soft-red, 20%) 20%, $white 40%)
+    &:hover
+        background: linear-gradient(to top, $soft-red 20%, $white 40%)
 
 .services-title-graphic
     color: $dark-desaturated-cyan
     font-size: 1.4rem
     font-weight: 900
+    @media (min-width: 1400px)
+        font-size: 1.6rem
 
 .services-text-graphic
     color: $dark-desaturated-cyan2
     font-size: 14px
+    @media (min-width: 1400px)
+        font-size: 16px
 
 .services-title-photo
     color: $dark-blue
     font-size: 1.4rem
     font-weight: 900
+    @media (min-width: 1400px)
+        font-size: 1.6rem
 
 .services-text-photo
     color: $dark-blue
     font-size: 14px
+    @media (min-width: 1400px)
+        font-size: 16px
 
 .client-title
     color: $grayish-blue
     text-transform: uppercase
     font-size: .9rem
     letter-spacing: 3px
+    @media (min-width: 850px)
+        font-size: 1.3rem
 
 .client-text
     color: $very-dark-grayish-blue
     font-size: 15px
+    @media (min-width: 850px)
+        font-size: 17px
 
 .client-name
     font-family: $title-font
     font-size: .9rem
     font-weight: 900
     color: $very-dark-desaturated-blue
+    @media (min-width: 850px)
+        font-size: 1.1rem
 
 .client-profession
     font-size: 13px

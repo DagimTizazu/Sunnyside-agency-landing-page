@@ -1,9 +1,16 @@
 .main-footer
     background: $dark-moderate-cyan2
+
+.footer-content
     text-align: center
     svg
         path
             fill: $dark-desaturated-cyan2
+    @media (min-width: 600px)
+        margin: auto
+        width: 50%
+    @media (min-width: 1000px)
+        width: 22%
 
 .footer-logo
     padding: 2.5em 0 1.3em
@@ -11,11 +18,21 @@
 .footer-nav
     display: flex
     justify-content: space-around
-    color: $dark-moderate-cyan
     margin-bottom: 3.5em
+
+.footer-items
+    color: $dark-moderate-cyan
+    text-decoration: none
+    &:hover
+        color: $white
 
 .social-links
     padding-bottom: 3em
+
+.social-items
+    path
+        &:hover
+            fill: $white
 
 .social-list
     display: flex

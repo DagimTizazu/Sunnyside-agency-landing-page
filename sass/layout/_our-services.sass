@@ -1,3 +1,7 @@
+.our-services
+    @media (min-width: 500px)
+        display: flex
+
 .graphics-container-1
     height: 510px
     display: flex
@@ -6,8 +10,18 @@
     justify-content: flex-end
     background:
         image: url('../images/mobile/image-graphic-design.jpg')
-        size: contain
+        size: cover
         repeat: no-repeat
+        position: center
+    @media (min-width: 500px)
+        background:
+            image: url('../images/desktop/image-graphic-design.jpg')
+            size: cover
+            repeat: no-repeat
+            position: center
+        width: 50%
+    @media (min-width: 1000px)
+        height: 600px
 
 .graphics-container-2
     height: 510px
@@ -17,15 +31,29 @@
     justify-content: flex-end
     background:
         image: url('../images/mobile/image-photography.jpg')
-        size: contain
+        size: cover
         repeat: no-repeat
+        position: center
+    @media (min-width: 500px)
+        background:
+            image: url('../images/desktop/image-photography.jpg')
+            size: cover
+            repeat: no-repeat
+            position: center
+        width: 50%
+    @media (min-width: 1000px)
+        height: 600px
 
 .graphics-content
     margin-bottom: 3em
     text-align: center
+    @media (min-width: 700px)
+        margin: 3em
+    @media (min-width: 1200px)
+        margin: 3em 10em 4em
 
 .services-title-graphic, .services-title-photo
     margin-bottom: .7em
 
-.services-text-graphic, .services-title-photo
-    padding: 0 1em
+.services-text-graphic, .services-text-photo
+    padding: 0 1.3em

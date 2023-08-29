@@ -8,21 +8,44 @@
         size: cover
         repeat: no-repeat
         position: center
+    @media(min-width: 400px)
+        background-image: url('../images/desktop/image-header.jpg')
 
 .header-container
     display: flex
     justify-content: space-between
 
 .logo
-    padding: 1.2em 0 0 1em
+    width: 100%
+
+.logo-container
+    min-width: 8rem
+    margin: 1.2em 0 0 1em
+    @media (min-width: 850px)
+        margin: 2.5em 0 0 2em
+        min-width: 11rem
 
 //hero area
 .hero-area
     text-align: center
 
 .hero-title
-    margin-top: 3em
-    margin-bottom: .8em
+    margin-top: 2em
+    margin-bottom: 1.5em
+    @media (min-width: 850px)
+        margin-top: 3em
+        margin-bottom: 1.8em
+    @media (min-width: 900px)
+        margin-bottom: 1.9em
+    @media (min-width: 1000px)
+        margin-bottom: 2em
+    @media (min-width: 1300px)
+        margin-bottom: 2.1em
 
 .arrow-down
-    height: 85px
+    height: 100px
+    @media (min-width: 850px)
+        margin-bottom: 13em
+    @media (min-width: 1300px)
+        height: 120px
+        margin-bottom: 22em
